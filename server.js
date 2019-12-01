@@ -1,19 +1,16 @@
 var express = require("express");
 var path = require("path");
+var bodyParser = require("body-parser");
 
 var app= express();
 var PORT = 3000;
 
-// var htmlRoute = require('./app/routing/htmlRoutes');
-// var apiRoute = require('./app/routing/apiRoutes');
-// // var someapi = require('./routes/1/someapi');
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
-// app.use(htmlRoute);
-// app.use(apiRoute);
+// require('./app/routing/apiRoutes.js')(app);
+require('./app/routing/htmlRoutes.js')(app);
 
-
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
 
 app.listen(PORT, function(){
     console.log("Port is listening on "+ PORT);
