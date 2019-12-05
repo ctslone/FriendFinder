@@ -25,12 +25,11 @@ module.exports = function(app) {
         //Create for loop, compare each potential friends reduced score with the player's score.
         for (var x=0; x<friends.length; x++) {
             console.log(friends[x].scores.reduce((a,b) => a+b, 0));
-            friends[x].scores.reduce((a,b) => a+b, 0);
+            // friends[x].scores.reduce((a,b) => a+b, 0);
             // console.log(savedFriendsScore[x])
-
-            if (friends[x].scores.reduce((a,b) => a+b, 0) < newFriendScores) {
-                Difference = Math.abs((friends[x].scores.reduce((a,b) => a+b, 0)) - newFriendScores);
-                
+            var sub = Math.abs((friends[x].scores.reduce((a,b) => a+b, 0)) - newFriendScores)
+            if (sub < Difference) {
+                Difference = sub;
                 // console.log("lower")
                 console.log("diff " + Difference)
                 bestFriend = friends[x]

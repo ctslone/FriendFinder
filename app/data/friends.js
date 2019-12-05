@@ -12,7 +12,7 @@ var friendList = [
     {
         "name": "Amy",
         "photo": "http://www.tenerewilliams.com/wp-content/uploads/2013/02/Naomi-Grossman-headshot.jpg",
-        "scores": [5, 2, 4, 3, 3, 2, 1, 3, 3, 4]
+        "scores": [5, 5, 5, 5, 5, 5, 5, 5, 5, 4]
     }, 
     {
         "name": "Gavin",
@@ -47,7 +47,7 @@ var friendList = [
     {
         "name": "Danielle",
         "photo": "http://benhairstyle.com/wp-content/uploads/2014/10/beautiful_hairstyles_for_young_women.jpg",
-        "scores": [5, 1, 1, 1, 1, 1, 1, 1, 1, 5]
+        "scores": [5, 4, 2, 4, 4, 2, 3, 4, 1, 5]
     },
 ]
 
