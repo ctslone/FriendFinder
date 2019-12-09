@@ -13,9 +13,11 @@
   <!-- Font Awesome Glyphicons -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
-  <!-- Chosen -->
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+  <link rel="stylesheet" href="./style/style.css">
 
 </head>
 
@@ -23,7 +25,7 @@
 
   <div class="container">
 
-    <h2>Survey Questions</h2>
+    <h2 id="survey-title">Survey Questions</h2>
     <hr>
 
     <h3><strong>About You</strong></h3>
@@ -34,6 +36,9 @@
     <input type="text" id="photo" class="form-control" required>
 
     <hr>
+
+    <div class="row">
+      <div class="col-12" id="questions">
 
     <h3><strong>Question 1</strong></h3>
     <h4>Do you enjoy fast food?</h4>
@@ -150,6 +155,10 @@
       <option value="5">5 (Strongly Agree)</option>
     </select>
 
+    </div>
+
+    </div>
+
     <br>
     <br>
 
@@ -159,10 +168,14 @@
 
     <hr>
     <footer class="footer">
-      <div class="container">
-        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/ctslone/FriendFinder">GitHub Repo</a></p>
-      </div>
-    </footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+            <p class="text"><a href="/api/friends">API Friends List</a> | <a href="https://github.com/ctslone/FriendFinder">GitHub Repo</a></p>
+            </div>
+          </div>
+        </div>
+      </footer>
 
   </div>
 
@@ -181,7 +194,7 @@
           <img class="img-fluid" id="match-img" src="" alt="">
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-default close-butt" data-dismiss="modal">Close</button>
         </div>
       </div>
 
