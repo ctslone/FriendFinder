@@ -2,6 +2,8 @@
 
 Friendelodeon is a full-stack application that utilizes Node JS, MySQL and Express to match the user with a cartoon character friend, based off their answers to 10 survey questions.
 
+![](images/main.png)
+
 ## Getting Started
 
 Want to try it out?
@@ -12,6 +14,8 @@ You can click the "Go to survey" button to go straight to the survey.
 You can also check out the API data or the GitHub repo by clicking either of the links at the bottom of the page.
 
 Fill out your answers as honestly as you can to get the best match for you!
+
+![](images/survey.png)
 
 ## Challenges
 
